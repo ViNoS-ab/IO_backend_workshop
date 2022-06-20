@@ -12,6 +12,10 @@ export const articleSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.String,
       required: true,
     },
+    authorId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+    },
   },
   {
     timestamps: true,

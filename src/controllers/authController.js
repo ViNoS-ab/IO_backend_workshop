@@ -3,7 +3,7 @@ import User from "../models/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const MAX_AGE = 15 * 60; //max age in seconds = 15 minutes
+const MAX_AGE = 60 * 60 * 24; //max age in seconds = 1 day
 
 export async function signup(req, res) {
   const { username, email, password } = req.body;
